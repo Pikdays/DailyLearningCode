@@ -12,5 +12,5 @@
 {
     Owner *o;
 }
-
+@property NSString   *myString;
 @end

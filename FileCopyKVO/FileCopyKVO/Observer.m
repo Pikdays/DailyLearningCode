@@ -18,8 +18,7 @@
         NSString *desPath = [dir stringByAppendingPathComponent:@"a_bak.out"];
         
         file = [[FileHandler alloc] initPath:srcPath desPath:desPath];
-        
-        [file addObserver:self forKeyPath:@"readsize" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+           [file addObserver:self forKeyPath:@"readsize" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
     }
     return self;
 }
